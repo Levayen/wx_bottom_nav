@@ -1,0 +1,14 @@
+<!--components/bottomBar/bottomBar.wxml-->
+
+<view class="bottom_cell" style="padding-bottom:{{isIphoneX ? '68rpx' : '0rpx'}}">
+    <view wx:for="{{bottombarData}}" class="nav_link" bindtap="{{item.fn}}" wx:key="index">
+        <view style="text-align: center;padding-top:14rpx" class="defalut_btn">
+          <block>
+              <image style="width:40rpx;height:40rpx;margin:0 auto;" src="{{item.ico}}"></image>
+              <view style="{{item.current== 0 ? 'color: #999' : 'color:#FF5356'}}">{{item.name}}</view>
+          </block>
+        </view>
+      </view>  
+</view>
+<view>
+</view>
